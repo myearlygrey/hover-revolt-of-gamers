@@ -7,6 +7,7 @@ public class switchCar : MonoBehaviour
     public GameObject atticusCar;
     public GameObject drewCar;
     public GameObject carloCar;
+    public bool inputPressed = false;
 
     // Start is called before the first frame update
     void Start()
@@ -17,23 +18,31 @@ public class switchCar : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.C))
+        if (Input.GetKeyDown(KeyCode.C) && !inputPressed)
         {
             if (carloCar.activeSelf)
             {
+                inputPressed = true;
                 drewCar.SetActive(true);
                 carloCar.SetActive(false);
             }
             else if (drewCar.activeSelf)
             {
+                inputPressed = true;
                 atticusCar.SetActive(true);
                 drewCar.SetActive(false);
             }
             else if (atticusCar.activeSelf)
             {
+                inputPressed = true;
                 carloCar.SetActive(true);
                 atticusCar.SetActive(false);
             }
+            
         }
-    }
+
+        inputPressed = false;
+
+
+}
 }
