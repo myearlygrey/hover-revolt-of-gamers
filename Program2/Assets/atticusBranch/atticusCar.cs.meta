@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: c2f809613c27e4c70b49a8c1438b7170
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - woowooTurnSound: {instanceID: 0}
+  - turnCar: {instanceID: 0}
+  - attCar: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
