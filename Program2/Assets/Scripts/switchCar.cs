@@ -17,7 +17,7 @@ public class switchCar : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.C))
+        if (Input.GetKeyDown(KeyCode.C))
         {
             if (carloCar.activeSelf)
             {
